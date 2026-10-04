@@ -102,5 +102,17 @@
         { "category": "Soft Skills", "items": "Creative direction, concept development, client collaboration, visual storytelling" }
       ]
     }
+,
+    "social-media-content": {
+      "role": "Social Media Content Creator",
+      "cssPath": "../styles.css",
+      "summary": "Dynamic content creator specialising in social media strategy and scroll-stopping visual assets. Experienced in managing the end-to-end content pipeline \u2014 from ideation and content calendars to fast-paced video editing and graphic design \u2014 for streamers, startups, and corporate brands across TikTok, Instagram, and YouTube.",
+      "skills": [
+        { "category": "Social Strategy", "items": "Content calendars, brand messaging, audience engagement, analytics awareness, platform trends" },
+        { "category": "Content Production", "items": "Short-form video, storyboarding, social media carousels, ad creatives, campaign rollouts" },
+        { "category": "Video & Motion", "items": "CapCut, Premiere Pro, After Effects, trending audio integration, colour grading" },
+        { "category": "Design Software", "items": "Canva, Adobe Photoshop, Adobe Illustrator, Procreate, Lightroom" }
+      ]
+    }
   }
 }
