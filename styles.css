@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --bg-color: #f4f4f4;
+    --paper-color: #ffffff;
+    --text-main: #222222;
+    --text-muted: #555555;
+    --accent: #333333;
+    --divider: #eeeeee;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Atkinson Hyperlegible', system-ui, -apple-system, sans-serif;
+    color: var(--text-main);
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+    -webkit-font-smoothing: antialiased;
+}
+
+.sheet {
+    background-color: var(--paper-color);
+    width: 100%;
+    max-width: 850px;
+    padding: 5rem 4rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    line-height: 1.2;
+}
+
+.role {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem 1.5rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.contact a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid var(--divider);
+    padding-bottom: 0.25rem;
+    margin-bottom: 1.25rem;
+    color: var(--accent);
+}
+
+.job {
+    margin-bottom: 1.5rem;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.25rem;
+    flex-wrap: wrap;
+}
+
+.job-title {
+    font-weight: 700;
+    font-size: 1.05rem;
+}
+
+.job-company {
+    font-style: italic;
+    color: var(--text-muted);
+}
+
+.job-date {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+
+.job-list {
+    padding-left: 1.2rem;
+}
+
+.job-list li {
+    margin-bottom: 0.5rem;
+}
+
+.skills-list {
+    font-size: 1rem;
+}
+
+.education-entry {
+    margin-bottom: 1rem;
+}
+
+.edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.25rem;
+    flex-wrap: wrap;
+}
+
+.edu-school {
+    font-weight: 700;
+}
+
+.edu-date {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+
+/* Print Styles */
+@media print {
+    @page {
+        margin: 0;
+        size: A4 portrait;
+    }
+    body {
+        background-color: white;
+        padding: 0;
+        display: block;
+    }
+    .sheet {
+        box-shadow: none;
+        padding: 2cm;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 0;
+    }
+    .sheet {
+        padding: 2rem 1.5rem;
+        box-shadow: none;
+    }
+    .job-header, .edu-header {
+        flex-direction: column;
+    }
+    .job-date, .edu-date {
+        margin-top: 0.25rem;
+    }
+}
