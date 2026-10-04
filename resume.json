@@ -1,0 +1,230 @@
+{
+  "_comment": "SINGLE SOURCE OF TRUTH. Edit this file, then open build.html in a browser to regenerate all pages.",
+  "shared": {
+    "name": "Olan L. Lasquety",
+    "location": "Philippines",
+    "email": "lasquetyolanbsn@gmail.com",
+    "phone": "+639186526120",
+    "portfolio": "https://lasquetyolan.carrd.co",
+    "portfolioDesign": "https://lasquetyolan.carrd.co/#design",
+    "portfolioVideo": "https://lasquetyolan.carrd.co/#video",
+    "education": {
+      "school": "Manuel S. Enverga University Foundation",
+      "url": "https://mseuf.edu.ph",
+      "degree": "Bachelor of Science in Entertainment and Multimedia Computing",
+      "date": "Aug 2019 \u2013 Jun 2023"
+    },
+    "jobs": {
+      "bizforce": {
+        "id": "bizforce",
+        "title": "Multimedia Designer",
+        "company": "BizForce",
+        "location": "Philippines & USA Remote (Full-Time)",
+        "date": "Feb 2026 \u2013 Present",
+        "bullets": [
+          "Led visual rebranding initiatives across digital and print platforms, creating cohesive brand systems, marketing assets, and design guidelines that strengthened brand identity and consistency.",
+          "Produced high-performing multimedia content including VSL support visuals, short-form video ads, social media creatives, and internal communication materials tailored for engagement and conversion.",
+          "Designed print-ready marketing materials \u2014 event collateral, business cards, letterheads, and promotional assets \u2014 ensuring production accuracy and visual quality across formats."
+        ]
+      },
+      "payong": {
+        "id": "payong",
+        "title": "Head of Product, AI & Brand Strategy",
+        "company": "Payong",
+        "location": "Philippines (Part-Time)",
+        "date": "Apr 2026 \u2013 Present",
+        "bullets": [
+          "Led product strategy and cross-functional execution for AI-driven digital solutions, aligning product development with business goals, user needs, and market opportunities.",
+          "Managed marketing initiatives, brand positioning, and growth campaigns across digital platforms while coordinating stakeholder communication and business development efforts.",
+          "Oversaw quality assurance processes, workflow optimization, and product testing to ensure reliable user experiences and high delivery standards."
+        ]
+      },
+      "silong": {
+        "id": "silong",
+        "title": "Creative Director & Vice President",
+        "company": "Silong Strategies",
+        "location": "Philippines (Part-Time)",
+        "date": "May 2025 \u2013 Present",
+        "bullets": [
+          "Built the company\u2019s brand from the ground up \u2014 logo, identity system, brand guidelines, and visual language \u2014 delivering a cohesive creative foundation for early-stage growth.",
+          "Produced high-impact visual assets and campaign materials for digital marketing, investor decks, and business presentations.",
+          "Contributed to executive decision-making and overall company strategy as acting Vice President."
+        ]
+      },
+      "eclerx": {
+        "id": "eclerx",
+        "title": "Analyst Graphic Artist",
+        "company": "eClerx",
+        "location": "Philippines",
+        "date": "Sep 2024 \u2013 Nov 2024",
+        "bullets": [
+          "Designed custom greeting cards, celebration cards, and stationery for Minted using Adobe Illustrator, developing vector-based artwork and typography from concept to print-ready file.",
+          "Executed end-to-end prepress workflows \u2014 color management, layout verification, and quality control \u2014 ensuring flawless print production at scale.",
+          "Partnered with customers and internal teams to integrate feedback and balance aesthetic vision with technical production requirements."
+        ]
+      },
+      "freelance": {
+        "id": "freelance",
+        "title": "Freelance Multimedia Artist",
+        "company": "YCP (project-based, via independent contract)",
+        "location": "Philippines (Full-Time & Part-Time)",
+        "date": "Jul 2023 \u2013 Present",
+        "bullets": [
+          "Delivered branded short-form video edits and marketing video assets for YCP (Mar 2024 \u2013 Apr 2025), serving clients including SM Supermalls, Milo Cambodia, and Close-Up Thailand across multiple campaigns.",
+          "Designed and produced visual content across formats \u2014 social media posts, ads, posters, logos, and product mockups \u2014 for local and international brands, streamers, startups, and corporate clients.",
+          "Managed end-to-end social media content strategy for a startup client, covering planning, design, and scheduling to build consistent brand presence across platforms.",
+          "Produced short-form video content from pre-production through post, applying pacing, colour grading, and motion elements aligned to each client\u2019s brand voice."
+        ]
+      },
+      "cambridge": {
+        "id": "cambridge",
+        "title": "Multimedia Intern",
+        "company": "Cambridge University Press & Assessment",
+        "location": "cambridge.org",
+        "date": "Feb 2023 \u2013 Jun 2023",
+        "bullets": [
+          "Designed event and marketing materials \u2014 tarpaulins, layouts, and digital graphics \u2014 for internal and external communications including a Blood Donation Drive and Great Place to Work campaign.",
+          "Edited and produced video content for event coverage, contributing to multimedia storytelling across print and digital platforms.",
+          "Managed publishing and content flow for shared digital assets, ensuring timely and organised delivery across channels."
+        ]
+      }
+    }
+  },
+  "pages": {
+    "index": {
+      "role": "Multimedia Artist",
+      "cssPath": "styles.css",
+      "summary": "Creative multimedia professional spanning graphic design, video production, branding, and social media content \u2014 delivering cohesive visual experiences across digital and print for local and international clients.",
+      "portfolioLinks": [
+        { "href": "https://lasquetyolan.carrd.co/#design", "label": "View design & branding portfolio" },
+        { "href": "https://lasquetyolan.carrd.co/#video", "label": "View video editing portfolio" }
+      ],
+      "skills": [
+        { "category": "Design", "items": "Adobe Illustrator, Figma, Adobe Lightroom, Canva" },
+        { "category": "Video & Motion", "items": "Video editing, short-form production, motion graphics, colour grading" },
+        { "category": "Content", "items": "Social media strategy, brand identity, print production, storyboarding" },
+        { "category": "Soft Skills", "items": "End-to-end project ownership, client collaboration, creative direction" }
+      ],
+      "jobOrder": ["bizforce", "payong", "silong", "eclerx", "freelance", "cambridge"]
+    },
+    "graphic-design": {
+      "role": "Graphic Designer",
+      "cssPath": "../styles.css",
+      "summary": "Detail-oriented graphic designer with a track record in print production, brand identity, and digital marketing assets. Comfortable owning a project from initial concept through press-ready file, across vector illustration, layout, and typography.",
+      "portfolioLinks": [
+        { "href": "https://lasquetyolan.carrd.co/#design", "label": "View design & branding portfolio" }
+      ],
+      "skills": [
+        { "category": "Design Software", "items": "Adobe Illustrator, Figma, Adobe Lightroom" },
+        { "category": "Disciplines", "items": "Brand identity, print production, typography, layout, prepress & quality control" },
+        { "category": "Output Formats", "items": "Social media graphics, posters, banners, logos, event collateral, business cards, letterheads, stationery" },
+        { "category": "Soft Skills", "items": "Client feedback integration, end-to-end ownership, brand consistency" }
+      ],
+      "jobOrder": ["eclerx", "bizforce", "silong", "freelance", "cambridge", "payong"],
+      "jobBulletOverrides": {
+        "bizforce": [
+          "Designed print-ready marketing materials \u2014 event collateral, business cards, letterheads, and promotional assets \u2014 ensuring production accuracy and visual quality across formats.",
+          "Led visual rebranding initiatives across digital and print platforms, creating cohesive brand systems, marketing assets, and design guidelines that strengthened brand identity.",
+          "Produced social media creatives and internal communication materials, maintaining visual consistency across the brand system."
+        ],
+        "freelance": [
+          "Designed social media graphics, ads, posters, logos, and product mockups for local and international brands, streamers, startups, and corporate clients \u2014 delivered as print-ready and digital files.",
+          "Managed end-to-end brand identity and social media visual strategy for a startup client, producing a cohesive suite of assets across multiple formats.",
+          "Created visual content for YCP client campaigns, including branded static assets for SM Supermalls, Milo Cambodia, and Close-Up Thailand."
+        ],
+        "silong": [
+          "Built the company\u2019s brand from the ground up \u2014 logo, identity system, brand guidelines, and visual language \u2014 delivering a cohesive creative foundation for early-stage growth.",
+          "Produced high-impact visual assets and campaign materials for digital marketing, investor decks, and business presentations."
+        ],
+        "cambridge": [
+          "Designed event and marketing materials \u2014 tarpaulins, layouts, and digital graphics \u2014 for a Blood Donation Drive and Great Place to Work campaign.",
+          "Managed publishing and content flow for shared digital assets, ensuring timely and organised delivery across channels."
+        ]
+      }
+    },
+    "video-editing": {
+      "role": "Video Editor",
+      "cssPath": "../styles.css",
+      "summary": "Video editor with experience delivering short-form branded content and marketing videos for commercial clients. Covers the full production pipeline from pre-production through final export, with attention to pacing, colour grading, and motion.",
+      "portfolioLinks": [
+        { "href": "https://lasquetyolan.carrd.co/#video", "label": "View video editing portfolio" }
+      ],
+      "skills": [
+        { "category": "Video & Motion", "items": "Video editing, colour grading, motion graphics, short-form content, pre-to-post production pipeline" },
+        { "category": "Content", "items": "Brand video, marketing video, social media video, event coverage" },
+        { "category": "Design Support", "items": "Adobe Illustrator, Figma (for static assets supporting video work)" },
+        { "category": "Soft Skills", "items": "Deadline management, client brief interpretation, brand voice alignment" }
+      ],
+      "jobOrder": ["freelance", "bizforce", "cambridge", "silong", "payong", "eclerx"],
+      "jobBulletOverrides": {
+        "freelance": [
+          "Delivered branded short-form video edits and marketing video assets for YCP (Mar 2024 \u2013 Apr 2025), serving clients including SM Supermalls, Milo Cambodia, and Close-Up Thailand across multiple campaigns.",
+          "Produced short-form video content from pre-production through post, applying pacing, colour grading, and motion elements aligned to each client\u2019s brand voice.",
+          "Designed and produced social media visual content alongside video deliverables, ensuring cohesive brand presentation across formats.",
+          "Managed end-to-end content strategy for a startup client, covering planning, production, and scheduling."
+        ],
+        "bizforce": [
+          "Produced VSL support visuals, short-form video ads, and social media creatives tailored for engagement and conversion.",
+          "Led visual rebranding initiatives, creating brand systems and design guidelines that informed motion and video deliverables.",
+          "Designed print and digital marketing materials, maintaining visual consistency across video and static content."
+        ],
+        "cambridge": [
+          "Edited and produced video content for event coverage, contributing to multimedia storytelling across print and digital platforms.",
+          "Designed marketing materials supporting video campaigns, including tarpaulins and digital graphics.",
+          "Managed content flow and publishing for shared digital assets across channels."
+        ]
+      }
+    },
+    "content-creation": {
+      "role": "Content Creator",
+      "cssPath": "../styles.css",
+      "summary": "Versatile content creator specialising in social media strategy, scroll-stopping graphic and video content for streamers, startups, and corporate brands. Experienced in end-to-end content planning, production, and publishing.",
+      "portfolioLinks": [
+        { "href": "https://lasquetyolan.carrd.co/#design", "label": "View design & content portfolio" },
+        { "href": "https://lasquetyolan.carrd.co/#video", "label": "View video content portfolio" }
+      ],
+      "skills": [
+        { "category": "Content", "items": "Social media strategy, content calendars, brand messaging, short-form video, graphic posts, storyboarding" },
+        { "category": "Design Software", "items": "Adobe Illustrator, Figma, Adobe Lightroom, Canva" },
+        { "category": "Video & Motion", "items": "Short-form video production, colour grading, motion graphics" },
+        { "category": "Soft Skills", "items": "End-to-end ownership, platform awareness, brand voice consistency" }
+      ],
+      "jobOrder": ["freelance", "bizforce", "silong", "payong", "cambridge", "eclerx"],
+      "jobBulletOverrides": {
+        "freelance": [
+          "Managed end-to-end social media content strategy for a startup client, covering planning, design, and scheduling to build consistent brand presence across platforms.",
+          "Designed and produced social media graphics, ads, and posts for streamers, startups, and corporate clients \u2014 tailored for scroll-stopping impact across Instagram, Facebook, and similar platforms.",
+          "Produced short-form video content from pre-production through post for YCP (Mar 2024 \u2013 Apr 2025), delivering branded edits for SM Supermalls, Milo Cambodia, and Close-Up Thailand.",
+          "Delivered visual content across formats \u2014 static posts, animated graphics, and video clips \u2014 aligned to content calendars and client brand guidelines."
+        ],
+        "bizforce": [
+          "Produced short-form video ads, social media creatives, and VSL support visuals tailored for engagement and conversion.",
+          "Led visual rebranding initiatives creating cohesive brand systems and design guidelines that maintained content consistency across platforms.",
+          "Designed event collateral, business cards, and promotional assets supporting campaign rollouts."
+        ],
+        "silong": [
+          "Built the company\u2019s brand from the ground up and developed a suite of campaign materials for digital marketing, investor communications, and business presentations.",
+          "Produced ongoing content assets \u2014 graphics, layouts, and copy direction \u2014 aligned to brand positioning across digital channels.",
+          "Contributed to marketing strategy and growth planning in a leadership capacity as acting Vice President."
+        ]
+      }
+    },
+    "multimedia-designer": {
+      "role": "Multimedia Designer",
+      "cssPath": "../styles.css",
+      "summary": "Cross-disciplinary multimedia designer blending graphic design, video production, and brand strategy to deliver cohesive digital and print experiences. Equally comfortable creating a brand identity system, a short-form video, or a social media content suite \u2014 from first concept to final file.",
+      "portfolioLinks": [
+        { "href": "https://lasquetyolan.carrd.co/#design", "label": "View design & branding portfolio" },
+        { "href": "https://lasquetyolan.carrd.co/#video", "label": "View video editing portfolio" }
+      ],
+      "skills": [
+        { "category": "Design Software", "items": "Adobe Illustrator, Figma, Adobe Lightroom" },
+        { "category": "Video & Motion", "items": "Video editing, short-form production, motion graphics, colour grading, VSL visuals" },
+        { "category": "Print & Brand", "items": "Brand identity, print production, prepress & QC, layout, typography, event collateral" },
+        { "category": "Content", "items": "Social media strategy, content calendars, storyboarding, platform-tailored assets" },
+        { "category": "Soft Skills", "items": "Creative direction, end-to-end project ownership, client collaboration" }
+      ],
+      "jobOrder": ["bizforce", "freelance", "silong", "cambridge", "eclerx", "payong"]
+    }
+  }
+}
