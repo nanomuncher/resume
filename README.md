@@ -33,6 +33,7 @@ resume/
 ├── video-editing/index.html     ← /video-editing
 ├── content-creation/index.html  ← /content-creation
 ├── multimedia-designer/index.html ← /multimedia-designer
+├── multimedia-artist/index.html   ← /multimedia-artist
 ├── netlify.toml                 ← Netlify deploy config
 ├── .gitignore
 ├── AGENTS.md                    ← AI agent edit instructions
