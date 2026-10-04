@@ -1,186 +1,163 @@
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-    --bg-color: #f4f4f4;
-    --paper-color: #ffffff;
-    --text-main: #222222;
-    --text-muted: #555555;
-    --accent: #333333;
-    --divider: #eeeeee;
+    --bg: #f4f4f4;
+    --paper: #ffffff;
+    --ink: #1a1a1a;
+    --muted: #555555;
+    --accent: #1a1a1a;
+    --rule: #e0e0e0;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-    background-color: var(--bg-color);
+    background: var(--bg);
     font-family: 'Atkinson Hyperlegible', system-ui, -apple-system, sans-serif;
-    color: var(--text-main);
-    line-height: 1.6;
+    color: var(--ink);
+    line-height: 1.55;
+    padding: 2rem 1rem;
     display: flex;
     justify-content: center;
-    padding: 2rem 1rem;
     -webkit-font-smoothing: antialiased;
 }
 
 .sheet {
-    background-color: var(--paper-color);
+    background: var(--paper);
     width: 100%;
-    max-width: 850px;
-    padding: 5rem 4rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    max-width: 860px;
+    padding: 4.5rem 4rem;
+    box-shadow: 0 3px 18px rgba(0,0,0,.08);
 }
 
-header {
-    text-align: center;
-    margin-bottom: 2.5rem;
-}
+/* ── Header ─────────────────────────────── */
+header { text-align: center; margin-bottom: 2.25rem; }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     font-weight: 700;
-    margin-bottom: 0.25rem;
-    line-height: 1.2;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    margin-bottom: 0.2rem;
 }
 
 .role {
-    font-size: 1.25rem;
+    font-size: 1.05rem;
     font-weight: 400;
-    color: var(--text-muted);
-    margin-bottom: 1rem;
+    color: var(--muted);
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.12em;
+    margin-bottom: 1rem;
 }
 
 .contact {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem 1.5rem;
-    font-size: 0.9rem;
-    color: var(--text-muted);
+    gap: 0.4rem 1.4rem;
+    font-size: 0.88rem;
+    color: var(--muted);
+    list-style: none;
 }
+.contact a { color: inherit; text-decoration: none; }
+.contact a:hover { text-decoration: underline; }
 
-.contact a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.contact a:hover {
-    text-decoration: underline;
-}
-
-section {
-    margin-bottom: 2rem;
-}
+/* ── Sections ────────────────────────────── */
+section { margin-bottom: 1.75rem; }
 
 h2 {
-    font-size: 1.25rem;
+    font-size: 0.78rem;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
-    border-bottom: 1px solid var(--divider);
-    padding-bottom: 0.25rem;
-    margin-bottom: 1.25rem;
+    letter-spacing: 0.12em;
     color: var(--accent);
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
 }
 
-.job {
-    margin-bottom: 1.5rem;
+p.summary { color: var(--muted); font-size: 0.95rem; }
+
+/* ── Skill grid ──────────────────────────── */
+.skill-grid {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 4px 1.5rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
 }
+.skill-grid dt { font-weight: 700; color: var(--ink); white-space: nowrap; }
+.skill-grid dd { color: var(--muted); margin: 0; }
+
+/* ── Portfolio link ──────────────────────── */
+.portfolio-link {
+    margin-top: 0.65rem;
+    font-size: 0.88rem;
+}
+.portfolio-link a { color: var(--ink); text-decoration: underline; }
+.portfolio-link a:hover { color: var(--muted); }
+
+/* ── Experience entries ──────────────────── */
+.job { margin-bottom: 1.4rem; }
+.job:last-child { margin-bottom: 0; }
 
 .job-header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-bottom: 0.25rem;
     flex-wrap: wrap;
+    gap: 0.2rem 1rem;
+    margin-bottom: 0.2rem;
+    line-height: 1.3;
 }
 
-.job-title {
-    font-weight: 700;
-    font-size: 1.05rem;
-}
-
-.job-company {
-    font-style: italic;
-    color: var(--text-muted);
-}
-
-.job-date {
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    white-space: nowrap;
-}
+.job-title  { font-weight: 700; font-size: 1rem; }
+.job-company { font-style: italic; color: var(--muted); font-size: 0.95rem; }
+.job-date   { font-size: 0.85rem; color: var(--muted); white-space: nowrap; }
 
 .job-list {
-    padding-left: 1.2rem;
+    list-style: none;
+    padding-left: 1.1rem;
 }
-
 .job-list li {
-    margin-bottom: 0.5rem;
+    position: relative;
+    margin-bottom: 0.35rem;
+    font-size: 0.92rem;
+    line-height: 1.5;
+}
+.job-list li::before {
+    content: "\2022";
+    position: absolute;
+    left: -1.1rem;
+    color: var(--muted);
 }
 
-.skills-list {
-    font-size: 1rem;
-}
-
-.education-entry {
-    margin-bottom: 1rem;
-}
-
+/* ── Education ───────────────────────────── */
 .edu-header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-bottom: 0.25rem;
     flex-wrap: wrap;
+    gap: 0.2rem 1rem;
+    margin-bottom: 0.15rem;
 }
+.edu-school { font-weight: 700; font-size: 0.95rem; }
+.edu-degree { font-size: 0.9rem; color: var(--muted); }
+.edu-date   { font-size: 0.85rem; color: var(--muted); white-space: nowrap; }
 
-.edu-school {
-    font-weight: 700;
-}
-
-.edu-date {
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    white-space: nowrap;
-}
-
-/* Print Styles */
+/* ── Print ───────────────────────────────── */
 @media print {
-    @page {
-        margin: 0;
-        size: A4 portrait;
-    }
-    body {
-        background-color: white;
-        padding: 0;
-        display: block;
-    }
-    .sheet {
-        box-shadow: none;
-        padding: 2cm;
-        max-width: 100%;
-        margin: 0 auto;
-    }
+    @page { size: A4 portrait; margin: 0.5in; }
+    body { background: white; padding: 0; display: block; }
+    .sheet { box-shadow: none; padding: 0; max-width: 100%; }
 }
 
-/* Mobile Responsive */
-@media screen and (max-width: 600px) {
-    body {
-        padding: 0;
-    }
-    .sheet {
-        padding: 2rem 1.5rem;
-        box-shadow: none;
-    }
-    .job-header, .edu-header {
-        flex-direction: column;
-    }
-    .job-date, .edu-date {
-        margin-top: 0.25rem;
-    }
+/* ── Mobile ──────────────────────────────── */
+@media (max-width: 600px) {
+    body { padding: 0; }
+    .sheet { padding: 2rem 1.4rem; box-shadow: none; }
+    .job-header, .edu-header { flex-direction: column; }
+    .skill-grid { grid-template-columns: 1fr; gap: 2px 0; }
+    .skill-grid dt { margin-top: 0.5rem; }
+    .skill-grid dt:first-child { margin-top: 0; }
 }
