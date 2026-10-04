@@ -1,74 +1,127 @@
 # Resume — Olan L. Lasquety
 
-A personal, single-page resume website built with plain HTML and CSS. Designed to look like a clean white sheet of paper in the browser, with role-tailored versions for different employers.
+A personal, single-page resume website: clean white paper on a light background,
+built with plain HTML + CSS (no framework, no build step, no JS).
+Five role-tailored versions deployable to any static host.
 
-## Live URL
+---
 
-Deployed via Netlify. Live at: **[your-site.netlify.app]** *(update after deploy)*
+## Live URLs
 
-## Pages
+Deployed via **Netlify** (free plan — works with private GitHub repos).
 
-| URL path              | Role version         |
-|-----------------------|----------------------|
-| `/`                   | General (Multimedia Artist) |
-| `/graphic-design`     | Graphic Designer     |
-| `/video-editing`      | Video Editor         |
-| `/content-creation`   | Content Creator      |
-| `/multimedia-designer`| Multimedia Designer  |
+| Route                   | Role                  |
+|-------------------------|-----------------------|
+| `/`                     | Multimedia Artist     |
+| `/graphic-design`       | Graphic Designer      |
+| `/video-editing`        | Video Editor          |
+| `/content-creation`     | Content Creator       |
+| `/multimedia-designer`  | Multimedia Designer   |
+
+> Update this table with your Netlify domain after first deploy.
+
+---
 
 ## Project Structure
 
 ```
 resume/
-├── index.html               ← General resume (/)
-├── styles.css               ← Shared stylesheet (all pages use this)
-├── graphic-design/
-│   └── index.html           ← /graphic-design
-├── video-editing/
-│   └── index.html           ← /video-editing
-├── content-creation/
-│   └── index.html           ← /content-creation
-├── multimedia-designer/
-│   └── index.html           ← /multimedia-designer
-├── netlify.toml             ← Netlify deploy config
+├── resume.json                  ← Single source of truth for all content
+├── styles.css                   ← Shared stylesheet (design tokens at top)
+├── index.html                   ← / (Multimedia Artist)
+├── graphic-design/index.html    ← /graphic-design
+├── video-editing/index.html     ← /video-editing
+├── content-creation/index.html  ← /content-creation
+├── multimedia-designer/index.html ← /multimedia-designer
+├── netlify.toml                 ← Netlify deploy config
+├── .gitignore
+├── AGENTS.md                    ← AI agent edit instructions
 └── README.md
 ```
 
-## Tech Stack
+---
+
+## Tech
 
 - **Plain HTML5 + CSS3** — no framework, no build step, no JS
-- **Atkinson Hyperlegible** font via Google Fonts (system sans-serif fallback)
-- **Print stylesheet** built-in — `Ctrl+P` or Save as PDF produces a clean A4/Letter document
-- **Responsive** — scales cleanly on mobile via media queries
+- **Atkinson Hyperlegible** via Google Fonts (system sans-serif fallback)
+- **Print stylesheet** built in — `Ctrl+P` / Save as PDF gives a clean A4 document
+- **Responsive** — scales to mobile via media queries
+- **noindex** on all pages — not discoverable by search engines
 
-## How to Edit an Existing Page
+---
 
-1. Open the relevant `index.html` file (e.g. `graphic-design/index.html`)
-2. Edit the text directly in HTML
-3. Commit and push — Netlify auto-deploys on every push
+## Editing Content
 
-## How to Add a New Role Page
+### The fast way (one-liners)
+If you use Antigravity or another AI agent, see **[AGENTS.md](./AGENTS.md)** for
+the full list of one-liner commands, e.g.:
 
-1. Create a new folder, e.g. `photography/`
-2. Copy an existing `index.html` into it as a starting template
-3. Update `<title>`, the `.role` paragraph, the Summary section, the Skills list, and reorder/rewrite the Work Experience entries to emphasize the most relevant details for that role
-4. Update the `<link rel="stylesheet" href="../styles.css">` path (one `../` for sub-pages)
-5. Commit and push
+```
+"add Premiere Pro to video editing skills"
+"update my YCP bullet to say ..."
+"add a new role page for UI Design"
+"swap the accent colour to #1a6b3c"
+```
 
-## Design Notes
+### Manually
+1. All content lives in two places:
+   - **`resume.json`** — the authoritative data record
+   - The relevant **`index.html`** file — what actually renders in the browser
+2. Open the HTML file, find the commented section (`<!-- ═══ SKILLS ═══ -->` etc.),
+   and edit the text directly.
+3. Mirror the change in `resume.json` so the data stays in sync.
+4. Commit and push — Netlify redeploys automatically.
 
-- **Background:** `#f4f4f4` page, `#ffffff` paper with a soft `box-shadow`
-- **Font:** Atkinson Hyperlegible at `line-height: 1.5`
-- **Max width:** ~850px (A4/US Letter proportions)
-- **Print:** `@media print` removes shadow, sets A4 page margins
-- **SEO:** All pages include `<meta name="robots" content="noindex, nofollow">`
+### Skills layout
+Skills use a `<dl class="skill-grid">` definition list:
+```html
+<dl class="skill-grid">
+  <dt>Category Name</dt>  <dd>Tool A, Tool B, Tool C</dd>
+  <dt>Another Category</dt> <dd>Skill X, Skill Y</dd>
+</dl>
+```
+
+---
+
+## Adding a New Role Page
+
+1. Create a new folder, e.g. `ui-design/`
+2. Copy the closest existing `index.html` into it
+3. Update:
+   - `<title>` and `.role` paragraph
+   - Summary section
+   - Skill categories and items (order by relevance to role)
+   - Job order and bullet emphasis
+   - `<link rel="stylesheet" href="../styles.css">` (one `../` for sub-pages)
+4. Add the new page block to `resume.json > pages`
+5. Update this README table
+6. Commit: `feat(ui-design): add UI Designer role page`
+
+---
 
 ## Deploying to Netlify (first time)
 
-1. Go to [app.netlify.com](https://app.netlify.com) → **Add new site → Import an existing project**
-2. Connect to GitHub and select the `resume` repository
+1. [app.netlify.com](https://app.netlify.com) → **Add new site → Import an existing project**
+2. Connect GitHub → select `nanomuncher/resume`
 3. **Build command:** *(leave blank)*
-4. **Publish directory:** `.` (root)
-5. Click **Deploy site**
+4. **Publish directory:** `.`
+5. **Deploy site**
 
-Netlify will give you a URL like `https://random-name.netlify.app`. You can change it under **Site settings → Domain management**.
+Netlify gives you a URL like `https://random-name.netlify.app`.
+Rename it under **Site settings → Domain management**.
+
+---
+
+## Design Tokens (quick reference)
+
+All visual variables are at the top of `styles.css`:
+
+| Token       | Default   | Controls                        |
+|-------------|-----------|----------------------------------|
+| `--bg`      | `#f4f4f4` | Page background                 |
+| `--paper`   | `#ffffff` | Sheet background                |
+| `--ink`     | `#1a1a1a` | Headings, skill labels, links   |
+| `--muted`   | `#555555` | Body copy, dates, company names |
+| `--accent`  | `#1a1a1a` | Section heading text            |
+| `--rule`    | `#e0e0e0` | Section divider lines           |
