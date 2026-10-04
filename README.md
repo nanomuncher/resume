@@ -34,6 +34,7 @@ resume/
 ├── content-creation/index.html  ← /content-creation
 ├── multimedia-designer/index.html ← /multimedia-designer
 ├── multimedia-artist/index.html   ← /multimedia-artist
+├── social-media-content/index.html← /social-media-content
 ├── netlify.toml                 ← Netlify deploy config
 ├── .gitignore
 ├── AGENTS.md                    ← AI agent edit instructions
