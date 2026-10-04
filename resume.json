@@ -14,11 +14,6 @@
       "degree": "Bachelor of Science in Entertainment and Multimedia Computing",
       "date": "Aug 2019 \u2013 Jun 2023"
     },
-    "confirmedTools": {
-      "design": ["Adobe Illustrator", "Adobe Photoshop", "Figma", "Canva", "Adobe Lightroom"],
-      "video": ["After Effects", "DaVinci Resolve", "CapCut"],
-      "notes": "3D tools (occasional, not primary); sound engineering (project-specific, e.g. voice cleanup)"
-    },
     "jobs": {
       "bizforce": {
         "id": "bizforce",
@@ -70,17 +65,16 @@
       },
       "freelance": {
         "id": "freelance",
-        "title": "Independent Contractor / Freelance Multimedia Artist",
-        "company": "Self-employed",
+        "title": "Independent Freelance Multimedia Artist",
+        "company": "Self-Employed",
         "location": "Philippines (Contract & Project-Based)",
         "date": "Jul 2023 \u2013 Present",
-        "_note": "Works directly with a wide range of clients: individuals, startups, SMEs, and large enterprises. YCP is one regular project source (Mar 2024\u2013Apr 2025), not the employer.",
         "bullets": [
-          "Took on a wide range of freelance contracts \u2014 working directly with individuals, small businesses, and large enterprises \u2014 delivering graphic design, video editing, and multimedia content tailored to each client\u2019s needs.",
-          "Produced and edited short-form branded video content for multiple client campaigns through YCP (Mar 2024 \u2013 Apr 2025), including projects for SM Supermalls, Milo Cambodia, and Close-Up Thailand.",
-          "Designed social media graphics, ads, posters, logos, and product mockups across a range of industries \u2014 from streamer branding to corporate marketing \u2014 delivered in both print-ready and digital formats.",
-          "Managed end-to-end social media content strategy for a startup client, covering planning, design, and scheduling to build consistent brand presence across platforms.",
-          "Produced short-form video content from pre-production through post using After Effects, DaVinci Resolve, and CapCut, applying pacing, colour grading, and motion aligned to each client\u2019s brand voice."
+          "Operated as an independent multimedia artist, delivering graphic design, video editing, and content strategy for a diverse client roster ranging from individual creators to large enterprises.",
+          "Partnered with YCP as a dedicated freelance editor (Mar 2024 \u2013 Apr 2025) to produce short-form branded campaigns for major clients including SM Supermalls, Milo Cambodia, and Close-Up Thailand.",
+          "Designed social media graphics, ads, logos, and print-ready product mockups across various industries using the Adobe Creative Suite and Procreate.",
+          "Produced short-form video content using After Effects and Premiere Pro, applying pacing, colour grading, and motion aligned to each client's brand voice.",
+          "Managed end-to-end social media content strategy for startup clients, covering planning, design, and scheduling to build consistent brand presence across platforms."
         ]
       },
       "cambridge": {
@@ -95,64 +89,6 @@
           "Managed publishing and content flow for shared digital assets, ensuring timely and organised delivery across channels."
         ]
       }
-    }
-  },
-  "pages": {
-    "index": {
-      "role": "Multimedia Artist",
-      "cssPath": "styles.css",
-      "summary": "Creative multimedia professional spanning graphic design, video production, branding, and social media content \u2014 delivering cohesive visual experiences across digital and print, working directly with clients ranging from individual creators to large enterprises.",
-      "skills": [
-        { "category": "Design Software", "items": "Adobe Illustrator, Adobe Photoshop, Figma, Canva, Adobe Lightroom" },
-        { "category": "Video & Motion", "items": "After Effects, DaVinci Resolve, CapCut, short-form production, colour grading" },
-        { "category": "Content & Brand", "items": "Social media strategy, brand identity, print production, storyboarding" },
-        { "category": "Soft Skills", "items": "End-to-end project ownership, direct client collaboration, creative direction" }
-      ]
-    },
-    "graphic-design": {
-      "role": "Graphic Designer",
-      "cssPath": "../styles.css",
-      "summary": "Detail-oriented graphic designer with a track record in print production, brand identity, and digital marketing assets. Comfortable owning a project from initial concept through press-ready file, across vector illustration, layout, and typography.",
-      "skills": [
-        { "category": "Design Software", "items": "Adobe Illustrator, Adobe Photoshop, Figma, Canva, Adobe Lightroom" },
-        { "category": "Disciplines", "items": "Brand identity, print production, typography, layout, prepress & quality control" },
-        { "category": "Output Formats", "items": "Social media graphics, posters, banners, logos, event collateral, business cards, letterheads, stationery" },
-        { "category": "Soft Skills", "items": "Client feedback integration, end-to-end ownership, brand consistency" }
-      ]
-    },
-    "video-editing": {
-      "role": "Video Editor",
-      "cssPath": "../styles.css",
-      "summary": "Video editor with experience delivering short-form branded content and marketing videos for a wide range of clients. Covers the full production pipeline from pre-production through final export, with strong proficiency in After Effects, DaVinci Resolve, and CapCut.",
-      "skills": [
-        { "category": "Video Software", "items": "After Effects, DaVinci Resolve, CapCut" },
-        { "category": "Video & Motion", "items": "Short-form editing, colour grading, motion graphics, visual effects, pre-to-post pipeline" },
-        { "category": "Design Support", "items": "Adobe Illustrator, Adobe Photoshop, Figma (static assets supporting video work)" },
-        { "category": "Soft Skills", "items": "Deadline management, client brief interpretation, brand voice alignment" }
-      ]
-    },
-    "content-creation": {
-      "role": "Content Creator",
-      "cssPath": "../styles.css",
-      "summary": "Versatile content creator specialising in social media strategy, scroll-stopping graphic and video content for individuals, streamers, startups, and corporate brands. Experienced in end-to-end content planning, production, and publishing.",
-      "skills": [
-        { "category": "Content & Strategy", "items": "Social media strategy, content calendars, brand messaging, short-form video, storyboarding" },
-        { "category": "Design Software", "items": "Adobe Illustrator, Adobe Photoshop, Figma, Canva, Adobe Lightroom" },
-        { "category": "Video & Motion", "items": "After Effects, DaVinci Resolve, CapCut, colour grading" },
-        { "category": "Soft Skills", "items": "End-to-end ownership, platform awareness, brand voice consistency" }
-      ]
-    },
-    "multimedia-designer": {
-      "role": "Multimedia Designer",
-      "cssPath": "../styles.css",
-      "summary": "Cross-disciplinary multimedia designer blending graphic design, video production, and brand strategy to deliver cohesive digital and print experiences. Equally comfortable creating a brand identity, editing a short-form video, or managing a full social media content suite \u2014 for clients ranging from individual creators to large enterprises.",
-      "skills": [
-        { "category": "Design Software", "items": "Adobe Illustrator, Adobe Photoshop, Figma, Canva, Adobe Lightroom" },
-        { "category": "Video & Motion", "items": "After Effects, DaVinci Resolve, CapCut, short-form production, colour grading, motion graphics" },
-        { "category": "Print & Brand", "items": "Brand identity, print production, prepress & QC, layout, typography, event collateral" },
-        { "category": "Content", "items": "Social media strategy, content calendars, storyboarding, platform-tailored assets" },
-        { "category": "Soft Skills", "items": "Creative direction, end-to-end project ownership, direct client collaboration" }
-      ]
     }
   }
 }
