@@ -90,5 +90,17 @@
         ]
       }
     }
+,
+    "multimedia-artist": {
+      "role": "Multimedia Artist",
+      "cssPath": "../styles.css",
+      "summary": "Creative multimedia artist specialising in digital illustration, motion graphics, and video production. Highly proficient in the Adobe Creative Suite, Procreate, and Blender, with a proven ability to bring concepts to life across 2D, 3D, and video formats for brands, streamers, and corporate clients.",
+      "skills": [
+        { "category": "Digital Art & 2D", "items": "Procreate, Adobe Illustrator, Adobe Photoshop, digital painting, vector illustration" },
+        { "category": "Motion & 3D", "items": "After Effects, Blender (3D Modelling & Animation), Premiere Pro, motion graphics" },
+        { "category": "Video Production", "items": "DaVinci Resolve, CapCut, colour grading, storyboarding, post-production pipeline" },
+        { "category": "Soft Skills", "items": "Creative direction, concept development, client collaboration, visual storytelling" }
+      ]
+    }
   }
 }
